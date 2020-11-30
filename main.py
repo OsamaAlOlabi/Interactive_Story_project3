@@ -135,8 +135,8 @@ What do you do?:
                         game_state = False
                         repeat()
                         break
-                    else:
-                        print("Invalid choice. Please type a number from the list")
+                else:
+                    print("Invalid choice. Please type a number from the list")
 
         elif user_input == "2":
             print('Dang, no one ever has thought of doing that!\n'
@@ -147,6 +147,8 @@ What do you do?:
                   'You DIED\n')
             game_state = False
             repeat()
+        else:
+            print("Invalid choice. Please type a number from the list")
 
 
 def repeat():
